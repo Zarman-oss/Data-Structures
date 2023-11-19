@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main()
+class Node
 {
-    int *p;
-    int x[6];
-    x[0] = 1;
-    x[1] = 2;
-    x[2] = 3;
-    x[3] = 4;
-    x[4] = 4;
-    x[5] = 5;
+public:
+    int data;   // to save the value
+    Node *next; // to point the address in index
+
+}
+
+main()
+{
 
     cout
         << "x";
