@@ -1,6 +1,4 @@
-Certainly! Here's a basic template for a README file for your data structure practice repository in C++:
 
----
 
 # Data Structure Practice Repository
 
