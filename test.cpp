@@ -7,7 +7,7 @@ main()
     int found = 5, search_value;
     cout << "Enter the value";
     cin >> search_value;
-    for (int i = 0; int <= 4; i++)
+    for (int i = 0; int 4; i++)
     {
         if (search_value == x[i])
         {
@@ -19,7 +19,7 @@ main()
         {
             cout << "n\n Value can't be found";
         }
-        return x[current]
+        return 0;
     }
 
     return 0;
