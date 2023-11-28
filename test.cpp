@@ -3,9 +3,9 @@ using namespace std;
 
 main()
 {
-    int x;
+    int x[3];
 
-    cout << "x";
+    cout << "x[0]";
 
     return 0;
 }
