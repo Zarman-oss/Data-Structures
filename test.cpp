@@ -3,7 +3,7 @@ using namespace std;
 
 main()
 {
-    int x[3];
+    int x;
 
     cout << "x[0]";
 
