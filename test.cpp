@@ -5,7 +5,7 @@ main()
 {
     int x;
 
-    cout << "x[0]";
+    cout << "x";
 
     return 0;
 }
