@@ -6,27 +6,26 @@ class Person
 {
 
 private:
-    int rollno;
-    string name;
+    int rollno; // initialization
+    string name;     // assignment
 
 public:
-    Person()
+    Person(): rollno(100), name("name")
     {
-        rollno = 10;
-        rollno = 50;
     }
 
-    void get()
+    void print()
     {
-        cout << "\n\n"
-             << rollno << "\n";
+        // assignment
+        cout << "\n\n"<< rollno << endl; 
+        cout <<"n\n" << name;
     }
 };
 
 int main()
 {
     Person P;
-    P.get();
+    P.print();
 
     return 0;
 }
