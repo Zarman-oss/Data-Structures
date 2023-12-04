@@ -1,11 +1,32 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
-main()
+class Person
 {
-    int x;
 
-    cout << "x" << endl;
+private:
+    int rollno;
+    string name;
+
+public:
+    Person()
+    {
+        rollno = 10;
+        rollno = 50;
+    }
+
+    void get()
+    {
+        cout << "\n\n"
+             << rollno << "\n";
+    }
+};
+
+int main()
+{
+    Person P;
+    P.get();
 
     return 0;
 }
