@@ -6,19 +6,21 @@ class Person
 {
 
 private:
-    int rollno; // initialization
-    string name;     // assignment
+    int rollno;  // initialization
+    string name; // assignment
 
 public:
-    Person(): rollno(100), name("name")
+    Person() : rollno(100), name("Josh")
     {
     }
 
     void print()
     {
         // assignment
-        cout << "\n\n"<< rollno << endl; 
-        cout <<"n\n" << name;
+        cout << "\n\n"
+             << rollno << endl;
+        cout << "n\n"
+             << name;
     }
 };
 
