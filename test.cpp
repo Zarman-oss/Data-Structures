@@ -14,13 +14,15 @@ public:
     {
     }
 
-    void print()
+    int print(num1, num2)
     {
         // assignment
         cout << "\n\n"
              << rollno << endl;
         cout << "n\n"
-             << name;
+             << name; 
+             sum = num1 +num2
+        return 0;
     }
 };
 
