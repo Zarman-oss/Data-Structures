@@ -3,29 +3,27 @@ using namespace std;
 
 class Person
 {
-
-private:
-    int number; // instance variable
-
-    static int keys;
+    string name;
 
 public:
-    Person()
-
+    Person(string n)
     {
+        name = n;
     }
 
-    void print()
+    void getName()
     {
-        cout << "roll no is: " << keys << endl;
+        cout << "n\n"<< name;
     }
 };
 
-int Person::keys = 2;
-
 int main()
+
 {
-    Person p;
-    p.print();
+    Person P1("Person1"), P2("Person2");
+    Person P[2] = {P1, P2};
+    P[0].getName();
+    P[1].getName();
+
     return 0;
 }
