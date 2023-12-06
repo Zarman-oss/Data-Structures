@@ -1,35 +1,31 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
 class Person
 {
 
 private:
-    int rollno;  // initialization
-    string name; // assignment
+    int rollno = 2;
 
 public:
-    Person() : rollno(100), name("Josh")
+    Person()
+
     {
+
+        rollno++;
     }
 
-    int print(num1, num2)
+    void print() const
     {
-        // assignment
-        cout << "\n\n"
-             << rollno << endl;
-        cout << "n\n"
-             << name; 
-             sum = num1 +num2
-        return 0;
+        cout << "roll no is: " << rollno << endl;
     }
 };
 
 int main()
 {
-    Person P;
-    P.print();
-
+    Person P1, P2, P3;
+    P1.print();
+    P2.print();
+    P3.print();
     return 0;
 }
