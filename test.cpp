@@ -5,27 +5,27 @@ class Person
 {
 
 private:
-    int rollno = 2;
+    int number; // instance variable
+
+    static int keys;
 
 public:
     Person()
 
     {
-
-        rollno++;
     }
 
-    void print() const
+    void print()
     {
-        cout << "roll no is: " << rollno << endl;
+        cout << "roll no is: " << keys << endl;
     }
 };
 
+int Person::keys = 2;
+
 int main()
 {
-    Person P1, P2, P3;
-    P1.print();
-    P2.print();
-    P3.print();
+    Person p;
+    p.print();
     return 0;
 }
