@@ -3,27 +3,27 @@ using namespace std;
 
 class Person
 {
-    string name;
+    int rollno;
 
 public:
-    Person(string n)
+    void setRollNo(int r)
     {
-        name = n;
+        rollno = r;
     }
 
-    void getName()
+    void getRollNo()
     {
-        cout << "n\n"<< name;
+
+        cout << "\n\n Roll No. is: " << rollno;
     }
 };
 
 int main()
 
 {
-    Person P1("Person1"), P2("Person2");
-    Person P[2] = {P1, P2};
-    P[0].getName();
-    P[1].getName();
-
+  
+    Person *ptr;
+    ptr = new Person;
+    ptr -> setRollNo(19);
     return 0;
 }
