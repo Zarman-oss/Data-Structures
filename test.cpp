@@ -1,29 +1,53 @@
 #include <iostream>
 using namespace std;
 
-class Person
+class Engine
 {
-    int rollno;
 
 public:
-    void setRollNo(int r)
+    Engine()
     {
-        rollno = r;
+        cout << "n\n Engine Constructor";
     }
 
-    void getRollNo()
+    void start()
     {
-
-        cout << "\n\n Roll No. is: " << rollno;
+        cout << "n\n start";
+    }
+    ~Engine()
+    {
+        cout << "n\n Engine Destructor";
     }
 };
+
+class wheel()
+{
+
+public:
+    Wheel()
+    {
+        cout << "\n\n Wheel Constructor"
+    }
+
+    void move()
+    {
+        cout << "n\n Move";
+    }  
+
+
+    ~Wheel(){
+        cout<<""
+    }
+}      
+
+
 
 int main()
 
 {
-  
+
     Person *ptr;
     ptr = new Person;
-    ptr -> setRollNo(19);
+    ptr->setRollNo(19);
     return 0;
 }
