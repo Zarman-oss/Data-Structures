@@ -1,68 +1,31 @@
 #include <iostream>
 using namespace std;
 
-class Engine
+class X
 {
+private:
+    int x;
 
 public:
-    Engine()
+    void print()
     {
-        cout << "n\n Engine Constructor";
+        cout << "x : " << x;
     }
 
-    void start()
-    {
-        cout << "n\n start";
-    }
-    ~Engine()
-    {
-        cout << "n\n Engine Destructor";
-    }
+    friend void someFunc(X obj);
 };
 
-class Wheel
+void someFunc(X obj)
 {
-
-public:
-    Wheel()
-    {
-        cout << "\n\n Wheel Constructor";
-    }
-
-    void move()
-    {
-        cout << "n\n Move";
-    }
-
-    ~Wheel()
-    {
-        cout << "n\n Wheel Destructor";
-    }
-};
-
-class Car
-{
-public:
-    Engine E;
-    Wheel W;
-
-    Car()
-    {
-        cout << "n\n Car Constructor";
-    }
-
-    ~Car()
-    {
-        cout << "n\n Car Destructor";
-    }
-};
+    obj.x = 12;
+}
 
 int main()
 
 {
 
-    Car C; 
-    C.E.start();
-
+    X obj;
+    someFunc(obj);
+    obj.print();
     return 0;
 }
