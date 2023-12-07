@@ -20,34 +20,49 @@ public:
     }
 };
 
-class wheel()
+class Wheel
 {
 
 public:
     Wheel()
     {
-        cout << "\n\n Wheel Constructor"
+        cout << "\n\n Wheel Constructor";
     }
 
     void move()
     {
         cout << "n\n Move";
-    }  
-
-
-    ~Wheel(){
-        cout<<""
     }
-}      
 
+    ~Wheel()
+    {
+        cout << "n\n Wheel Destructor";
+    }
+};
 
+class Car
+{
+public:
+    Engine E;
+    Wheel W;
+
+    Car()
+    {
+        cout << "n\n Car Constructor";
+    }
+
+    ~Car()
+    {
+        cout << "n\n Car Destructor";
+    }
+};
 
 int main()
 
 {
 
-    Person *ptr;
-    ptr = new Person;
-    ptr->setRollNo(19);
+    Car C; 
+    C.E.start();
+
     return 0;
 }
