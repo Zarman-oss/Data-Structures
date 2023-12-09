@@ -1,28 +1,35 @@
 #include <iostream>
 using namespace std;
 
-class One
+class A
 {
-public:
-    string name;
-    One(string n)
-    {
 
-        this->name = n;
+private:
+    int a;
+
+public:
+    void Cout()
+    {
+        a = 0;
     }
 
-    One operator = (One obj)
+    void show()
     {
+        cout << "n =" << a;
+    }
 
-        obj.name = n;
-        return obj;
+    void operator++()
+    {
+        a = a + 1;
     }
 };
 
 int main()
 
 {
-    One O1('name'), O2('name two');
-    O1 = O2;
+    A obj;
+    obj.show();
+    ++obj;
+
     return 0;
 }
