@@ -1,31 +1,28 @@
 #include <iostream>
 using namespace std;
 
-class X
+class One
 {
-private:
-    int x;
-
 public:
-    void print()
+    string name;
+    One(string n)
     {
-        cout << "x : " << x;
+
+        this->name = n;
     }
 
-    friend void someFunc(X obj);
-};
+    One operator = (One obj)
+    {
 
-void someFunc(X obj)
-{
-    obj.x = 12;
-}
+        obj.name = n;
+        return obj;
+    }
+};
 
 int main()
 
 {
-
-    X obj;
-    someFunc(obj);
-    obj.print();
+    One O1('name'), O2('name two');
+    O1 = O2;
     return 0;
 }
