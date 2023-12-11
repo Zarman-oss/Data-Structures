@@ -1,35 +1,28 @@
 #include <iostream>
+#include <h.>
 using namespace std;
 
-class A
+class Student
 {
-
-private:
-    int a;
+    int rollno;
+    string name;
 
 public:
-    void Cout()
+    Student void func() const;
+    int operator+()
     {
-        a = 0;
     }
 
-    void show()
-    {
-        cout << "n =" << a;
-    }
+}
 
-    void operator++()
-    {
-        a = a + 1;
-    }
+void
+Student::func() const {
+
 };
 
 int main()
 
 {
-    A obj;
-    obj.show();
-    ++obj;
 
     return 0;
 }
