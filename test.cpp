@@ -14,7 +14,7 @@ public:
     }
 
 }
-//  
+
 void
 Student::func() const {
 
