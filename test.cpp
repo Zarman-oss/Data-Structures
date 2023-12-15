@@ -1,36 +1,23 @@
 #include <iostream>
 
 using namespace std;
-class Node
+
+template <class T>
+class Stack
 {
+private:
+    int a, b;
+
 public:
-    int data;
-    Node *pre;
-    Node *next;
+    void(int T x)
+    {
+    }
+};
 
-    void setData(int n)
-    {
-        data = n;
-    }
-    int getData()
-    {
-        return data;
-    }
-
-    void setPre(Node *p)
-    {
-        pre = p;
-    }
-    Node* setPre(Node *p)
-    {
-        pre = p;
-    }
-}
-
-int
-main()
+int main()
 
 {
+    Test("cats");
 
     return 0;
 }
