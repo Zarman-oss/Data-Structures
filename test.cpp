@@ -2,11 +2,20 @@
 #include <h.>
 using namespace std;
 
+class Node
+{
+
+public:
+    int data;
+    Node *next_address;
+};
+ 
+
+ 
 int main()
 
-    int *y = new int[23]; 
-
-,,
+    ,
+    ,
 {
 
     return 0;
