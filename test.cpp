@@ -2,26 +2,11 @@
 #include <h.>
 using namespace std;
 
-class Student
-{
-    int rollno;
-    string name;
-
-public:
-    Student void func() const;
-    int operator+()
-    {
-    }
-
-}
-
-void
-Student::func() const {
-
-};
-
 int main()
 
+    int *y = new int[23]; 
+
+,,
 {
 
     return 0;
