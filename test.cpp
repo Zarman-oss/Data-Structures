@@ -2,22 +2,18 @@
 
 using namespace std;
 
-template <class T>
-class Stack
-{
-private:
-    int a, b;
+// template <class T>
 
-public:
-    void(int T x)
-    {
-    }
-};
+int isFull()
+{
+    return noElements == size;
+}
 
 int main()
 
 {
-    Test("cats");
+    int n = 100;
+    displayNumbers(n);
 
     return 0;
 }
