@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// template <class T>
 
 int isFull()
 {
