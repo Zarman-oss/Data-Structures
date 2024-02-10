@@ -12,7 +12,7 @@ public:
 
   friend ostream &operator<<(ostream &output, Test &o)
   {
-    output << "\n Your Name: " << o.name;
+    output << "\n Your Name:" << o.name;
     return output;
   }
 };
