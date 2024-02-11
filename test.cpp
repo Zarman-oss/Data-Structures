@@ -7,7 +7,7 @@ public:
   string name;
   Test()
   {
-    name = "Bradd";
+    name = "Brad";
   }
 
   friend ostream &operator<<(ostream &output, Test &o)
