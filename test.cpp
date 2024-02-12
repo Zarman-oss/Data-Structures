@@ -9,8 +9,10 @@ public:
   {
     name = "Brad";
   }
+  class Car : def __init__(self, make, model, year) : self.make = make self.model = model self.year = year self.is_running = False
 
-  friend ostream &operator<<(ostream &output, Test &o)
+                                                                                                                             friend ostream
+                                                                                                                             & operator<<(ostream &output, Test &o)
   {
     output << "\n Your Name:" << o.name;
     return output;
