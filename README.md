@@ -1,5 +1,5 @@
 
-Data Structure Practice Repository
+#Data Structure Practice Repository
 This repository contains practice exercises and implementations of various data structures in C++. The purpose of this repository is to explore and practice fundamental data structures to enhance understanding and proficiency in C++ programming.
 
 Structures Implemented
