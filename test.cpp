@@ -1,27 +1,62 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
-class Test
+
+class BankAccount
 {
+private:
+  string ownerName;
+  string accountNumber;
+  double balance;
 
 public:
-  string name;
-  Test()
+  BankAccount(string name, string accNumber, double initialBalance)
   {
-    name = "Brad";
+    ownerName = name;
+    accountNumber = accNumber;
+    balance = initialBalance;
   }
-  class Car : def __init__(self, make, model, year) : self.make = make self.model = model self.year = year self.is_running = False
 
-                                                                                                                             & operator<<(ostream &output, Test &o)
+  void deposit(double amount)
   {
-    output << "\n Your Name:" << o.name;
-    return output;
+    balance += amount;
+    cout << "Deposit of $" << amount << " successful." << endl;
+  }
+
+  void withdraw(double amount)
+  {
+    if (balance >= amount)
+    {
+      balance -= amount;
+      cout << "Withdrawal of $" << amount << " successful." << endl;
+    }
+    else
+    {
+      cout << "Insufficient funds." << endl;
+    }
+  }
+
+  void checkBalance()
+  {
+    cout << "Account Balance for " << ownerName << " (" << accountNumber << "): $" << balance << endl;
   }
 };
 
 int main()
 {
-  Test T1;
-  cout << T1;
+  BankAccount myAccount("John Doe", "123456789", 1000.00);
+
+  myAccount.checkBalance(); // Initial balance
+
+  myAccount.deposit(500.0); // Deposit $500
+  myAccount.checkBalance(); // Balance after deposit
+
+  myAccount.withdraw(200.0); // Withdraw $200
+  myAccount.checkBalance();  // Balance after withdrawal
+
+  myAccount.withdraw(2000.0); // Attempt to withdraw more than balance
+  myAccount.checkBalance();   // Balance after failed withdrawal
+
   return 0;
 }
-export
