@@ -1,18 +1,30 @@
 #include <iostream>
 using namespace std;
-class Test()
-{ // insertion <<
-private:
+
+class Base
+{
   string name;
 
 public:
-  Test()
+  void getName()
   {
-    name = 'Brad '
+    cout << "name prompt";
   }
-  friend ostream &operator
-}
+};
 
-main()
+class Derived : public Base
 {
+public:
+  void getRoll()
+  {
+    getName();
+  }
+};
+
+int main()
+{
+
+  Derived D;
+  D.getRoll();
+  return 0;
 }
