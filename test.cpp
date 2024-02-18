@@ -2,21 +2,18 @@
 #include <fstream>
 using namespace std;
 
-class Base
+class Faculty
 {
+private:
+  string name;
+  int age;
+  string post;
+
 public:
-};
-
-class Derive
-{
-public:
-  friend getNum()
-};
-
-friend getNum()
-{
-
-  cout << "Friend func";
+  void setName(int n)
+  {
+    name = n;
+  }
 };
 
 int main()
