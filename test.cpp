@@ -1,30 +1,26 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Base
 {
-  string name;
-
 public:
-  void getName()
-  {
-    cout << "name prompt";
-  }
 };
 
-class Derived : public Base
+class Derive
 {
 public:
-  void getRoll()
-  {
-    getName();
-  }
+  friend getNum()
+};
+
+friend getNum()
+{
+
+  cout << "Friend func";
 };
 
 int main()
 {
 
-  Derived D;
-  D.getRoll();
   return 0;
 }
